@@ -1,0 +1,81 @@
+// responsive dizaino media queries
+
+@media all and (max-width: 1000px){
+    html, body{
+         font-size: 9px;
+    }
+    .triangle_topright{
+        display:none;
+    }
+    .nav .navbox{
+        padding-left: 0;
+    }
+    .popup .player iframe{
+        width: 560px; 
+        height: 315px;
+    }
+}
+
+@media all and (max-width: 780px){
+    html, body{
+         font-size: 8px;
+    }
+    .list li{
+        width: 80%;
+    }
+    .popup .player iframe{
+        width: 426px; 
+        height: 240px;
+    }
+}
+
+@media all and (max-width: 600px){
+    html, body{
+        font-size: 7px;
+    }
+    .triangle-bottomright,.triangle-bottomleft {
+        display: none;
+    }
+    .intro_textbox, .responsive_box{
+        width: 100%;
+        padding: 10%;
+    }
+    .register {
+        padding-right: 7%;
+        padding-left: 7%;
+        .register_form {     
+        flex-direction: column;
+        align-items: center;    
+            .try_text{
+                width: 60%;
+                left: 5rem;
+            }
+            .size{
+                width: 60%;
+                margin-top: 2rem;
+            }
+        }  
+    }
+    .popup .player iframe{
+        width: 256px; 
+        height: 144px;
+    }
+    .nav .navbox{
+        flex-wrap: wrap;
+        .newsletter{
+        width: 50%;}
+    }
+    .more{
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+}
+
+@media all and (max-width: 400px){
+    h1{
+        font-size: 4rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+}
