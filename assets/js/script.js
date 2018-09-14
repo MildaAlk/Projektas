@@ -1,5 +1,7 @@
 (function(){  
 
+    //automatic video play after play button is pressed
+
     var pop = document.querySelector( '.popup' );  
     var vid = document.querySelector( '.vid' ).src;
     
@@ -42,5 +44,31 @@
         document.querySelector( '.vid' ).src = vid;
 
     };
+
+    // auto background slider
+
+    var index = 1;
+
+    function autoSlide(){
+
+        var image = document.getElementsByClassName("slide");
+        
+
+        for(i=0; i<image.length; i++){
+
+            image[i].style.display = 'none';
+
+        };
+
+        if(index>image.length){ index=1 };
+
+        image[index-1].style.display = "block";
+        index++;
+        
+        setTimeout(autoSlide,3000);
+    
+    };
+
+    autoSlide();
 
 }()); 

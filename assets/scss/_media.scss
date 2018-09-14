@@ -14,6 +14,9 @@
         width: 560px; 
         height: 315px;
     }
+    header .backround img{
+        width: 120%;
+    }
 }
 
 @media all and (max-width: 780px){
@@ -26,6 +29,10 @@
     .popup .player iframe{
         width: 426px; 
         height: 240px;
+    }
+    header .backround img{
+        height:100%;
+        width: auto;
     }
 }
 
