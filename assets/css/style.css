@@ -473,7 +473,8 @@ header {
     height: 240px; }
   header .backround img {
     height: 100%;
-    width: auto; } }
+    width: auto;
+    width: initial; } }
 
 @media all and (max-width: 600px) {
   html, body {

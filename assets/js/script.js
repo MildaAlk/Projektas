@@ -47,28 +47,45 @@
 
     // auto background slider
 
-    var index = 1;
 
-    function autoSlide(){
+    // var index = 1;
 
-        var image = document.getElementsByClassName("slide");
+    // function autoSlide(){
+
+    //     var image = document.getElementsByClassName("slide");
         
 
-        for(i=0; i<image.length; i++){
+    //     for(i=0; i<image.length; i++){
 
-            image[i].style.display = 'none';
+    //         image[i].style.display = 'none';
 
-        };
+    //     };
 
-        if(index>image.length){ index=1 };
+    //     if(index>image.length){ index=1 };
 
-        image[index-1].style.display = "block";
-        index++;
+    //     image[index-1].style.display = "block";
+    //     index++;
         
-        setTimeout(autoSlide,3000);
+    //     setTimeout(autoSlide,3000);
     
-    };
+    // };
 
-    autoSlide();
+    // autoSlide();
+    
+
+    // autoslide with jQuery fade effect
+
+    $(".backround > .slide:gt(0)").hide();
+
+    setInterval(function() {
+    $('.backround > .slide:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.backround');
+    }, 4000);
+
+
 
 }()); 
